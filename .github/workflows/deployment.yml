@@ -12,6 +12,8 @@ jobs:
           node-version: 18
       - name: Install npm dependencies
         run: npm ci
+      - name: Run Lint
+        run: npm run lint
       - name: Run tests
         run: npm test
   deploy:
